@@ -71,3 +71,5 @@
     </hashTree>
   </hashTree>
 </jmeterTestPlan>
+
+#run from command prompt -  .\jmeter -n -t "C:\Users\bajan\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\examples\Test Plan- Command line.jmx" -l "C:\Users\bajan\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\examples\Result\Result1.csv" -e -o "C:\Users\bajan\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\examples\Report\report1" -Jusers=10 -Jrampup=10 -Jloopcount=10
