@@ -8,12 +8,12 @@
     </TestPlan>
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
-        <stringProp name="ThreadGroup.num_threads">${__P(users,1)}</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">${__P(rampup,1)}</stringProp>
+        <intProp name="ThreadGroup.num_threads">1</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
-          <stringProp name="LoopController.loops">${__P(loopcount,1)}</stringProp>
+          <stringProp name="LoopController.loops">1</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
       </ThreadGroup>
@@ -71,5 +71,3 @@
     </hashTree>
   </hashTree>
 </jmeterTestPlan>
-
-#run from command prompt -  .\jmeter -n -t "C:\Users\bajan\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\examples\Test Plan- Command line.jmx" -l "C:\Users\bajan\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\examples\Result\Result1.csv" -e -o "C:\Users\bajan\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\examples\Report\report1" -Jusers=10 -Jrampup=10 -Jloopcount=10
